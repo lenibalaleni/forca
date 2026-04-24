@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jogo da Forca</title>
-  <meta name="description" content="Jogo da Forca interativo com palavras em português. Tenta adivinhar a palavra antes que o boneco seja enforcado!" />
+  <meta name="description"
+    content="Jogo da Forca interativo com palavras em português. Tenta adivinhar a palavra antes que o boneco seja enforcado!" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <div class="background-blobs">
@@ -22,7 +25,7 @@
     <!-- Category Selection Screen -->
     <div id="category-screen" class="category-screen">
       <h2 class="selection-title">Escolha uma Categoria</h2>
-      <div class="category-grid">
+      <div class="category-gri">
         <button class="cat-btn" data-cat="Filmes">🎬 Filmes</button>
         <button class="cat-btn" data-cat="Séries">📺 Séries</button>
         <button class="cat-btn" data-cat="Comida">🍕 Comida</button>
@@ -55,18 +58,24 @@
         <div class="gallows-wrapper">
           <svg id="hangman-svg" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
             <!-- Gallows structure (always visible) -->
-            <line x1="20" y1="210" x2="180" y2="210" stroke="#a8d4f5" stroke-width="5" stroke-linecap="round"/>
-            <line x1="60" y1="210" x2="60" y2="20"  stroke="#a8d4f5" stroke-width="5" stroke-linecap="round"/>
-            <line x1="60" y1="20"  x2="130" y2="20" stroke="#a8d4f5" stroke-width="5" stroke-linecap="round"/>
-            <line x1="130" y1="20" x2="130" y2="45" stroke="#a8d4f5" stroke-width="5" stroke-linecap="round"/>
+            <line x1="20" y1="210" x2="180" y2="210" stroke="#a8d4f5" stroke-width="5" stroke-linecap="round" />
+            <line x1="60" y1="210" x2="60" y2="20" stroke="#a8d4f5" stroke-width="5" stroke-linecap="round" />
+            <line x1="60" y1="20" x2="130" y2="20" stroke="#a8d4f5" stroke-width="5" stroke-linecap="round" />
+            <line x1="130" y1="20" x2="130" y2="45" stroke="#a8d4f5" stroke-width="5" stroke-linecap="round" />
 
             <!-- Body parts (hidden initially) -->
-            <circle id="part-head" cx="130" cy="60" r="15" stroke="#3b8fd4" stroke-width="4" fill="none" class="body-part hidden"/>
-            <line id="part-body" x1="130" y1="75" x2="130" y2="130" stroke="#3b8fd4" stroke-width="4" stroke-linecap="round" class="body-part hidden"/>
-            <line id="part-left-arm" x1="130" y1="90" x2="105" y2="115" stroke="#3b8fd4" stroke-width="4" stroke-linecap="round" class="body-part hidden"/>
-            <line id="part-right-arm" x1="130" y1="90" x2="155" y2="115" stroke="#3b8fd4" stroke-width="4" stroke-linecap="round" class="body-part hidden"/>
-            <line id="part-left-leg" x1="130" y1="130" x2="105" y2="160" stroke="#3b8fd4" stroke-width="4" stroke-linecap="round" class="body-part hidden"/>
-            <line id="part-right-leg" x1="130" y1="130" x2="155" y2="160" stroke="#3b8fd4" stroke-width="4" stroke-linecap="round" class="body-part hidden"/>
+            <circle id="part-head" cx="130" cy="60" r="15" stroke="#3b8fd4" stroke-width="4" fill="none"
+              class="body-part hidden" />
+            <line id="part-body" x1="130" y1="75" x2="130" y2="130" stroke="#3b8fd4" stroke-width="4"
+              stroke-linecap="round" class="body-part hidden" />
+            <line id="part-left-arm" x1="130" y1="90" x2="105" y2="115" stroke="#3b8fd4" stroke-width="4"
+              stroke-linecap="round" class="body-part hidden" />
+            <line id="part-right-arm" x1="130" y1="90" x2="155" y2="115" stroke="#3b8fd4" stroke-width="4"
+              stroke-linecap="round" class="body-part hidden" />
+            <line id="part-left-leg" x1="130" y1="130" x2="105" y2="160" stroke="#3b8fd4" stroke-width="4"
+              stroke-linecap="round" class="body-part hidden" />
+            <line id="part-right-leg" x1="130" y1="130" x2="155" y2="160" stroke="#3b8fd4" stroke-width="4"
+              stroke-linecap="round" class="body-part hidden" />
           </svg>
         </div>
 
@@ -102,4 +111,5 @@
 
   <script src="index.js"></script>
 </body>
+
 </html>
